@@ -1,8 +1,6 @@
-using Shapes.Interfaces;
-
 namespace Shapes.Models;
 
-public sealed class Triangle : IShape
+public sealed class Triangle : Shape
 {
     /// <summary>
     /// Стороны треугольника.
@@ -40,7 +38,7 @@ public sealed class Triangle : IShape
     /// Вычисление площади треугольника.
     /// </summary>
     /// <returns>Площадь треугольника.</returns>
-    public double CalculateArea()
+    protected override double CalculateArea()
     {
         var p = (_a + _b + _c) / 2;
         return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));

@@ -1,8 +1,6 @@
-using Shapes.Interfaces;
-
 namespace Shapes.Models;
 
-public sealed class Circle : IShape
+public sealed class Circle : Shape
 {
     /// <summary>
     /// Радиус круга.
@@ -28,7 +26,7 @@ public sealed class Circle : IShape
     /// Вычисление площади круга.
     /// </summary>
     /// <returns>Площадь круга.</returns>
-    public double CalculateArea()
+    protected override double CalculateArea()
     {
         return Math.PI * Math.Pow(_radius, 2);
     }

@@ -13,7 +13,7 @@ public class TriangleTest
     public void Triangle_CalculateArea_Theory(double a, double b, double c, double expected)
     {
         Triangle triangle = new(a, b, c);
-        var result = triangle.CalculateArea();
+        var result = triangle.Area;
         
         Assert.Equal(expected, result, 0.00001D);
     }

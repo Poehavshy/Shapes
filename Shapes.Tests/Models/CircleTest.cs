@@ -13,7 +13,7 @@ public class CircleTest
     public void Circle_CalculateArea_Theory(double radius, double expected)
     {
         Circle circle = new(radius);
-        var result = circle.CalculateArea();
+        var result = circle.Area;
         
         Assert.Equal(expected, result, 0.00001D);
     }

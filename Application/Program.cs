@@ -1,7 +1,6 @@
-﻿using Shapes.Interfaces;
-using Shapes.Models;
+﻿using Shapes.Models;
 
-IShape shape;
+Shape shape;
 
 Console.WriteLine("Выберите фигуру:");
 Console.WriteLine("1. Круг");
@@ -21,4 +20,4 @@ switch (choose[0])
         return;
 }
 
-Console.WriteLine($"Площадь равна: {shape.CalculateArea()}");
+Console.WriteLine($"Площадь равна: {shape.Area}");
